@@ -11,7 +11,7 @@ int main ()
         printf("Pozitiv\n");
         }
     else if (input<0)
-        {
+        {     
         printf("Negativ\n");
         }
     else 
