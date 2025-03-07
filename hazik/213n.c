@@ -3,11 +3,11 @@
 int main()
 {
     int input;
-    int pozitiv;
-    int negativ;
+    int pozitiv=0;
+    int negativ=0;
     do
     {
-        printf("Egesz szam (vege: 0): %d \n", input);
+        printf("Egesz szam (vege: 0): ");
         scanf("%d", &input);
 
         if (input>0)
