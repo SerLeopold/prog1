@@ -3,9 +3,9 @@
 - Ebben a játékban földönkívülieket kell lőni amik megpróbálnak belénkcsapódni. 
 Az űrhajónknak 3 élete van, ezek elvesztése után a játék véget ér.
 
-- Features:   **Ponszámláló
-                    HP bar
-                    Epikus hangeffektek
+- Features:         **Ponszámláló,
+                    HP bar,
+                    Epikus hangeffektek,
                     Gyors és nehéz játékmenet**
 
 
