@@ -1,4 +1,4 @@
-int is_even(int n) {
+int paros(int n) {
     if (n % 2 == 0) {
         return 1;
     } else {
@@ -6,8 +6,8 @@ int is_even(int n) {
     }
 }
 
-// b verzio
+// b.)
 
-int is_odd(int n) {
-    return !is_even(n);
+int paratlan(int n) {
+    return !paros(n);
 }
