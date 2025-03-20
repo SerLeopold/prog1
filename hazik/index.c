@@ -1,23 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int sum_magassagkulonbseg(const char *num_str) {
-    int sum = 0;
-    for (int i = 0; num_str[i + 1] != '\0'; i++) {
-        sum += abs((num_str[i] - '0') - (num_str[i + 1] - '0'));
+int index_keres(const int *arr, int size, int elem) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == elem) {
+            return i;
+        }
     }
-    return sum;
+    return -1;
 }
 
 int main() {
-    char num_str[] = "17976931348623159077293051907890247336179769789423065727343008115"
-                     "77326758055009631327084773224075360211201138798713933576587897688"
-                     "14416622492847430639474124377767893424865485276302219601246094119"
-                     "45308295208500576883815068234246288147391311054082723716335051068"
-                     "4586298239947245938479716304835356329624224137216";
+    int arr[] = {3, 5, 7, 9, 11};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int elem = 7;
+    int index = index_keres(arr, size, elem);
     
-    int result = sum_magassagkulonbseg(num_str);
-    printf("A magasságkülönbségek összege: %d\n", result);
+    if (index != -1) {
+        printf("Az elem %d a(z) %d. indexen található.\n", elem, index);
+    } else {
+        printf("Az elem %d nincs a tömbben.\n", elem);
+    }
     
     return 0;
 }
+
