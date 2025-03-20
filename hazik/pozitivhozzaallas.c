@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void replace_negative_with_absolute(int arr[], int size) {
+void negbol_abszolut(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         if (arr[i] < 0) {
             arr[i] = abs(arr[i]);
@@ -9,7 +9,7 @@ void replace_negative_with_absolute(int arr[], int size) {
     }
 }
 
-void print_array(int arr[], int size) {
+void tomb_kiir(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         if (i != size - 1) {
             printf("%d, ", arr[i]);
@@ -24,12 +24,12 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
 
     printf("Tomb elso kiirasa: ");
-    print_array(arr, size);
+    tomb_kiir(arr, size);
 
-    replace_negative_with_absolute(arr, size);
+    negbol_abszolut(arr, size);
 
     printf("Tomb masodik kiirasa: ");
-    print_array(arr, size);
+    tomb_kiir(arr, size);
 
     return 0;
 }
